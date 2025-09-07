@@ -58,7 +58,7 @@ const questions = [
         ]
     },
     {
-        question: "Um número é divisível por 10, 100, ou 1000 quando: ?",
+        question: "Um número é divisível por 10, 100, ou 1000 quando: ",
         answers: [
             { text: "Não possui o número 0", correct: false },
             { text: "A soma dos seus algarismos é igual a 15", correct: false },
