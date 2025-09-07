@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Matemática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <div class="intro-container">
+            <h1>Bem-vindo(a) ao Quiz de Matemática!</h1>
+            <p>Prepare-se para testar seus conhecimentos!</p>
+            <button id="start-btn">Iniciar Quiz</button>
+        </div>
+    </div>
+    
+    <div id="quiz-screen" class="screen hidden">
+        <div class="quiz-container">
+            <div id="quiz">
+                <h2 id="question">Pergunta da vez</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+                <div id="feedback-message" class="hidden"></div>
+                <button id="next-btn">Próxima</button>
+            </div>
+            
+            <div id="results" class="hidden">
+                <h2>Fim do Quiz!</h2>
+                <p>Você acertou <span id="score-text">0</span> de <span id="total-questions">0</span> perguntas!</p>
+                <button id="restart-btn">Tentar Novamente</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

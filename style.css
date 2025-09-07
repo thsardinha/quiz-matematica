@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #fcce56;    
+    --secondary-color: #ffffff; 
+    --background-color: #0097b2; 
+    --text-color: #333333;       
+    --correct-color: #4db557;    
+    --incorrect-color: #F44336;  
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.screen {
+    width: 90%;
+    max-width: 600px;
+}
+
+.intro-container, .quiz-container {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-align: left;
+}
+
+.btn:hover:not([disabled]) {
+    transform: translateY(-3px);
+    background-color: #FFDEE9;
+}
+
+.btn.correct {
+    background-color: var(--correct-color);
+    color: white;
+}
+
+.btn.incorrect {
+    background-color: var(--incorrect-color);
+    color: white;
+}
+
+.btn[disabled] {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+#start-btn, #next-btn, #restart-btn {
+    background-color: #8C99D5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+#start-btn:hover, #next-btn:hover, #restart-btn:hover {
+    background-color: #6C7BBF;
+}
+
+#feedback-message {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#feedback-message.correct {
+    color: var(--correct-color);
+}
+
+#feedback-message.incorrect {
+    color: var(--incorrect-color);
+}
+
+.hidden {
+    display: none;
+}
