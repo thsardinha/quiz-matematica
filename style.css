@@ -68,7 +68,7 @@ h2 {
 
 .btn:hover:not([disabled]) {
     transform: translateY(-3px);
-    background-color: #FFDEE9;
+    background-color: #fffeb4;
 }
 
 .btn.correct {
